@@ -1,5 +1,4 @@
 #!/bin/bash
-rm `find . -name \*.exe`
 git add -A
 git status
 echo --------------------------------------------
