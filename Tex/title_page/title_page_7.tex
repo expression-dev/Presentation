@@ -1,0 +1,75 @@
+\documentclass{book}
+\usepackage{graphicx}
+\usepackage[a4paper, margin=1in]{geometry}
+
+\newcommand*{\plogo}{\fbox{$\mathcal{PL}$}}
+
+
+\newcommand*{\titleGP}{\begingroup
+\centering
+\vspace*{\baselineskip}
+
+\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
+\rule{\textwidth}{0.4pt}\\[\baselineskip]
+
+{\LARGE Math Expressions Calculator}\\[0.2\baselineskip]
+
+\rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt}
+\rule{\textwidth}{1.6pt}\\[\baselineskip] % Thick horizontal line
+
+Author \\[\baselineskip]
+{\Large Alex Ivanov Tsvetanov\\\par}
+{\itshape Sofia High School of Mathematics \\ Sofia, Bulgaria\par}
+
+\vspace*{2\baselineskip}
+
+\scshape
+Under the direction of \\
+ch. ace. Emil Kelevedjiev \\\par
+%(Scientific Project Manager)\par
+
+\vfill
+
+{\scshape 2016} \\[0.3\baselineskip]
+{\large SRS, Blagoevgrag, Bulgaria }\par
+
+\endgroup}
+
+\begin{document} 
+
+\pagestyle{empty}
+
+\titleGP
+\newpage
+
+\section*{Summary}
+There is a lot of tools for calculations and data processing (like wolframalpha.com and MS Excel) but they cannot allow you create custom new operations (like functions, brackets, etc.).
+That is why our program is better than them.
+This project aims at making an application, which calculates and simplifies expressions with custom data types. This application is different than the other tools, with an option to run-time add custom operations, variables, arrays, pairs of brackets and functions. It can be used for scientific and learning purposes.
+
+\section*{Introduction}
+We have implemented calculations of expressions with an option to run-time add operations, variables, pairs of brackets, functions and find derivative functions.
+
+\section*{Functions of application}
+\begin{table}[ht]
+\centering
+	\resizebox{\textwidth}{!}{\begin{tabular}{c|c|c}
+		Function & Description & Example\\
+		\hline
+		No/End   & Each of the execution  & End\\
+		\hline
+		I want more!   & Adds new functions &  \\
+		\hline
+		(...)'   & Gives you a derivative function &  (a+b)' \\
+		\hline
+		calc   & Calculates the expression & calc (a+b)*c \\
+		\hline
+		set   & Set value of variable & set d (a+b)*c \\
+		\hline
+	\end{tabular}}
+\end{table}
+\section*{Conclusion}
+	This project can help in work with big data, database, because it can make the works more human readable. This is useful of scientists and young students, because it can help them to check your answers of task and can help them with hint for better solution. \\
+	In the future this project will have arrays, operation for integral and will modified to can be used like open-source library.
+
+\end{document}
